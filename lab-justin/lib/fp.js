@@ -4,7 +4,7 @@
 const lists = module.exports = {};
 
 lists.map = (list, callback) => {
-  return Array.prototype.map.call(list, callback);
+  return Array.prototype.map.apply(list, callback);
 };
 
 
